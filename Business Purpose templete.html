@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden auto;
+    }
+    html{
+        font-size: 10px;
+    }
+    .wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    .header{
+        min-height:20rem ;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+        padding: 0rem 6rem; 
+    }
+    .logo img{
+        height: 8rem;
+        width: 9rem;
+
+    }
+    .link{
+        display: flex;
+        gap: 3rem;
+    }
+    .link a{
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+    .icn{
+        font-size: 5rem;
+    }
+    .icn{
+        display: none;
+    }
+    .btn button{
+        height: 4rem;
+        width: 13rem;
+        background-color: black;
+        color: white;
+        border-radius: 3rem;
+
+    }
+    .sec1{
+        min-height:90rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first{
+        height: 60rem;
+        width: 90%;
+        background-image:linear-gradient(rgba(0,0,0,0.2) ,rgba(0,0,0,0.2)) ,url(./Fbgimg.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 4rem;
+        color:#FFFFFF;
+        gap: 3rem;
+        
+    }
+    .first h1{
+        font-size: 5.5rem;
+    }
+    .first p{
+        font-size: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .second{
+        min-height: 40rem;
+        width: 90%;
+        padding: 3rem;
+        display: flex;
+        font-size: 2rem;
+       flex-wrap: wrap;
+
+    }
+    .one{
+        height: 35rem;
+        width: 50%;
+       border-right:1px solid black ;
+        justify-content: center;
+        display: flex;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding: 3rem; */
+    }
+    .two{
+        height: 35rem;
+        width: 50%;
+        border:0rem;
+        justify-content: center;
+        display: flex;
+        line-height: 3rem;
+        gap: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0rem 5rem;
+    }
+    .two button{
+        height: 4rem;
+        width: 18rem;
+        background-color: black;
+        color: white;
+        border-radius: 3rem;
+        border: 0px;
+    }
+    .sec2{
+        min-height: 25rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    .ls{
+        height: 25rem;
+        width: 40%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        font-size: 4rem;
+        padding: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .rs{
+       min-height: 25rem;
+        width: 60%;
+       
+        display: flex;
+        gap: 7rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3rem;
+    }
+    .ims{
+        width: 15%;
+    }
+
+    .ims img{
+        height: 11rem;
+        width: 10rem;
+    }
+    .sec3{
+        min-height: 70rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .up{
+        height: 15rem;
+        width: 100%;
+        font-size: 2rem;
+        padding-left: 4rem;
+        
+    }
+    .h1s{
+        height: 15rem;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .dw{
+        min-height: 55rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .imgs{
+        height: 40rem;
+        width: 50%;
+        display: flex;
+    }
+        .imgs:hover{
+            animation: example 1s linear 3s 1 normal ;
+
+        }
+        
+ 
+    @keyframes example {
+			from {
+				transform: translateX(0px);
+				
+
+			}
+
+			to {
+				transform: translateX(0px) rotate(360deg) ;
+			
+			}
+		}
+    .txt{
+        min-height: 45rem;
+        width: 50%;
+        display: flex;
+     
+        flex-direction: column;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5rem;
+        flex-wrap: wrap;
+        padding: 3rem;
+    }
+    .tx{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .imgs img{
+        height: 100%;
+        width:100%;
+    }
+    .sec4{
+        min-height: 90rem;
+        width: 100%;
+        display: flex;
+        background-color: #F2F2F2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .upper{
+        height: 20rem;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
+    .upp{
+        width: 40%;
+        font-size: 1.9rem;
+    }
+    .main{
+        min-height: 55rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8rem;
+    }
+    .mainA{
+        height:55rem;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+       color: #111111;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+    .Ma{
+        display: flex;
+    }
+    .Ma img{
+        height: 25rem;
+        width: 25rem;
+
+    }
+    .txtx h4{
+        font-size: 3rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    }
+    .txtx p{
+        font-size: 2rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .txtx1 p{
+        font-size: 1.6rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .icon{
+            display: flex; 
+            gap: 3rem;
+            font-size:xx-large;
+    }
+    .sec5{
+       min-height: 74rem;
+        width: 100%;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .sec5a{
+        height: 13rem;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2rem;
+       
+    }
+    .sec5b{
+      height: 47rem;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .tab{
+        height: 10rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 3rem; 
+        font-size: 2rem;
+        border-bottom: 1px solid black;
+    }
+    .tab1{
+        height: 10rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 3rem; 
+        font-size: 2rem;
+        border-bottom: 1px solid black;
+    }
+    .fr{
+        width: 25%;
+    }
+    .sec6{
+        min-height: 30rem;
+        width: 100%;
+        display: flex;
+       
+        flex-direction: column;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+      
+    }
+    .mai{
+        height: auto;
+        width: 90%;
+        font-size: 2.5rem;
+        display: flex;
+        gap: 5rem;
+        justify-content: flex-start;
+        align-items: center;
+      
+      
+    }
+    .mai button{
+        height: 4rem;
+        width: 15rem;
+        background-color: black;
+        color: white;
+        border-radius: 3rem;
+        border: 0rem;
+    }
+    .sec7{
+        min-height: 30rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #1A1A1A;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .sec7a{
+        min-height:10rem;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem 0rem;
+        align-items: center;
+    }
+    .sec7a img{
+                    height: 10rem;
+                    width: 10rem;
+    }
+    .sec7b{
+       min-height: 20rem;
+        width: 90%;
+        display: flex;
+        color:#FFFFFF;
+        font-size: 1.7rem;
+        gap: 5rem;
+        justify-content:space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3rem 0rem;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 30%;
+    }
+    .last a{
+        text-decoration: none;
+        color: #808080;
+    }
+    .footer{
+        height: 10rem;
+        width: 100%;
+        background-color: #333333;
+        color: #FFFFFF;
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer a{
+        color: #ADCCE9;
+    }
+
+    @media only screen and (max-width: 900px){
+            html{
+                font-size: 8px;
+            }
+            
+            .first{
+                background-size: cover;
+            }
+            .first{
+                width: 90%;
+
+            }
+            .one{
+                width:100%;
+                border: 0px;
+            }
+            .two{
+                width:100%;
+                font-size: 20px;
+                padding: 0px;
+                border: 0px;
+            }
+            .ls{
+                width: 100%;
+
+            }
+            .rs{
+                width: 100%;
+                padding: 0px;
+            }
+            .ims{
+                width: 30%;
+            }
+            .imgs{
+                width: 90%;     
+            }
+            .up{
+                width: 100%;
+            }
+            .txt{
+                width: 100%;
+            }
+            .h1s{
+                width: 80%;
+            }
+            .upp{
+                width: 80%;
+                display: flex;
+                padding-left: 30px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .mainA{
+                width: 90%;
+                padding: 30px;
+            }
+           
+            .sec7a{
+                width: 90%;
+            }
+            .last{
+                width: 100%;
+                padding: 10px 0px;
+            }
+    }
+    @media only screen and (max-width: 500px){
+            html{
+                font-size: 7px;
+            }
+            
+            .icn{
+                display: block;
+            }
+            .icn img{
+                height: 60px;
+                width: 60px;
+            }
+            .link{
+                display: none;
+            }
+            .first{
+                height: 300px;
+                width: 90%;
+                background-size:cover;
+            }
+            .first{
+                width: 90%;
+            }
+            .one{
+                width:100%;
+                border: 0px;
+            }
+            .two{
+                width:100%;
+                font-size: 20px;
+                padding: 0px;
+                border: 0px;
+            }
+           
+            .ls{
+                width: 100%;
+
+            }
+            .rs{
+                width: 100%;
+                padding: 20px 0px;
+            }
+            .ims{
+                width: 30%;
+            }
+            .imgs{
+                width: 90%;
+            }
+            .up{
+                width: 100%;
+            }
+            .txtx1{
+                width: 100%;
+            }
+            .txt{
+                width: 100%;
+            }
+            .h1s{
+                width: 100%;
+            }
+            .upp{
+                width:100%;
+                display: flex;
+                padding: 30px;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .sec4{
+                padding: 20px 0px;
+            }
+            .mainA{
+                width: 90%;
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .sec4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sec6{
+                padding: 5rem;
+            }
+            .sec7a{
+                width: 90%;
+            }
+            .last{
+                width: 100%;
+                padding: 10px 0px;
+            }
+            .btn{
+                display: none;
+            }
+         
+    }
+    @media only screen and ( max-width: 340px){
+            html{
+                font-size: 6px;
+            }
+            
+            .icn{
+                display: block;
+
+            }
+            .icn img{
+                height: 50px;
+                width: 50px;
+            }
+            .link{
+                display: none;
+            }
+            .first{
+                height: 300px;
+                width: 90%;
+                background-size:cover;
+            }
+            .first{
+                width: 90%;
+            }
+            .one{
+                width:100%;
+                border: 0px;
+            }
+            .two{
+                width:100%;
+                font-size: 20px;
+                padding: 0px;
+                border: 0px;
+            }
+           
+            .ls{
+                width: 100%;
+
+            }
+            .rs{
+                width: 100%;
+                padding: 20px 0px;
+            }
+            .ims{
+                width: 30%;
+            }
+            .imgs{
+                width: 90%;
+            }
+            .up{
+                width: 100%;
+            }
+            .txtx1{
+                width: 100%;
+            }
+            .txt{
+                width: 100%;
+            }
+            .tx{
+                width: 100%;
+            }
+            .h1s{
+                width: 100%;
+            }
+            .upp{
+                width:100%;
+                display: flex;
+                padding: 30px;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .sec4{
+                padding: 20px 0px;
+            }
+            .mainA{
+                width: 90%;
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .sec4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sec6{
+                padding: 5rem;
+            }
+            .sec7a{
+                width: 90%;
+            }
+            .last{
+                width: 100%;
+                padding: 10px 0px;
+            }
+            .btn{
+                display: none;
+            }
+         
+    }
+    @media only screen and ( max-width: 280px){
+            html{
+                font-size: 6px;
+            }
+            
+            .icn{
+                display: block;
+
+            }
+            .icn img{
+                height: 50px;
+                width: 50px;
+            }
+            .link{
+                display: none;
+            }
+            .first{
+                height: 300px;
+                width: 90%;
+                background-size:cover;
+            }
+            .first{
+                width: 90%;
+            }
+            .one{
+                width:100%;
+                border: 0px;
+            }
+            .two{
+                width:100%;
+                font-size: 20px;
+                padding: 0px;
+                border: 0px;
+            }
+           
+            .ls{
+                width: 100%;
+
+            }
+            .rs{
+                width: 100%;
+                padding: 20px 0px;
+            }
+            .ims{
+                width: 30%;
+            }
+            .imgs{
+                width: 90%;
+            }
+            .up{
+                width: 100%;
+            }
+            .txtx1{
+                width: 100%;
+            }
+            .txt{
+                width: 100%;
+            }
+            .tx{
+                width: 80%;
+            }
+            .h1s{
+                width: 100%;
+            }
+            .upp{
+                width:100%;
+                display: flex;
+                padding: 30px;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .sec4{
+                padding: 20px 0px;
+            }
+            .mainA{
+                width: 90%;
+                padding: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .sec4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sec6{
+                padding: 5rem;
+            }
+            .sec7a{
+                width: 90%;
+            }
+            .last{
+                width: 100%;
+                padding: 10px 0px;
+            }
+            .btn{
+                display: none;
+            }
+         
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="./Mlogo.png" alt="">
+            </div>
+            <div class="link">
+              <a href="">HOME</a>  
+              <a href="#">ABOUT </a>
+              <a href="">CONTACT</a>
+            
+            </div>
+            <div class="icn">
+               <img src="./manu.png" alt="">
+            </div>
+            <div class="btn">
+                <button>CONTACT</button>
+            </div>
+        </div>
+
+        <div class="sec1">
+            <div class="first">
+                <h1>ABOUT US</h1>
+                <p> From technology integration to team training, every  aspect was handled seamlessly. Our efficiency and morale have never been higher.</p>
+                
+            </div>
+            <div class="second">
+                <div class="one">
+                <p>how we work </p>
+                <h1>
+                    Your Path to  Business Excellence
+                </h1>
+                </div>
+                <div class="two">
+                    <p>Our expert team provides training and tools to foster a culture of transparency and efficiency, helping your business achieve its goals and enhance employee engagement.</p>
+                    <button>CONTACT US</button>
+                </div>
+            </div>
+        </div>
+        <div class="sec2">
+
+            <div class="ls">
+                <p>Solution to 56,000+ happy companies</p>
+            </div>
+            <div class="rs">
+                <div class="ims">
+                    <img src="companypng.png" alt="">
+                </div>
+                <div class="ims">
+                    <img src="companyB.png" alt="">
+                </div>
+                <div class="ims">
+                    <img src="companyC.png" alt="">
+                </div>
+                <div class="ims">
+                    <img src="companyD.png" alt="">
+                </div>  
+            </div>
+        </div>
+
+        <div class="sec3">
+            <div class="up">
+                <div class="h1s">
+                <h1>UNLOCK YOUR BUSINESS POTENTIAL</h1>
+                </div>
+            </div>
+            <div class="dw">
+                <div class="imgs">
+                  <img src="midimg.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <div class="tx">
+                        <h2>Your Path to Business Excellence</h2>
+                        <p>Sample text. Click to select the Text Element.</p>
+                    </div>
+                    <div class="tx">
+                        <h2>Empowering Business Growth</h2>
+                        <p>Sample text. Click to select the Text Element.</p>
+                    </div>
+                    <div class="tx">
+                        <h2>Solutions for a Brighter Future</h2>
+                        <p>Sample text. Click to select the Text Element.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec4">
+
+            <div class="upper">
+                <div class="upp">
+                    <h1>OUR TEAM</h1>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="mainA">
+                    <div class="Ma">
+                        <img src="./ram.png" alt="">
+                    </div>
+                    <div class="txtx">
+                       <p>Ram Kale</p>
+                       <h4>creative leader</h4>
+                    </div>
+                    <div class="txtx1">
+                        <p>Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="mainA">
+                    <div class="Ma">
+                        <img src="./omkar1.png" alt="">
+                    </div>
+                    <div class="txtx">
+                       <p>Omkar Patil </p>
+                       <h4>chief accountant</h4>
+                    </div>
+                    <div class="txtx1">
+                        <p>Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="mainA">
+                    <div class="Ma">
+                        <img src="./vivek.png" alt="">
+                    </div>
+                    <div class="txtx">
+                       <p>Vivak Jadhav</p>
+                       <h4>sales manager</h4>
+                    </div>
+                    <div class="txtx1">
+                        <p>Glavi amet ritnisl libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="sec5">
+            <div class="sec5a">
+                <h1>LEADING WITH INNAVATION</h1>
+            </div>
+            <div class="sec5b">
+                <div class="tab">
+                  <div class="fr">
+                   <p>Features</p>
+                    </div>
+                    <div class="fr">
+                    <p>Nestfund</p>
+                    </div>
+                    <div class="fr">
+                     <p>Company Cards</p>
+                    </div>
+                    <div class="fr">
+                     <p>Report software</p>
+                    </div>
+                </div>
+                <div class="tab1">
+                    <div class="fr">
+                    <h4>Fractional Shares</h4>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+                <div class="tab1">
+                <div class="fr">
+                    <h4>Personalized Insights</h4>
+                    </div>
+                     <div class="fr">
+                    <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+                <div class="tab1">
+                    <div class="fr">
+                    <h4>Fee Transparency</h4>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+                <div class="tab1">
+                    <div class="fr">
+                    <h4>Effortless Automation</h4>
+                    </div>
+                     <div class="fr">
+                    <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+                <div class="tab1">
+                    <div class="fr">
+                    <h4>Award-Winning</h4>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                    <div class="fr">
+                    <i class="fa-solid fa-minus"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sec6">
+            <div class="mai">
+                <h1>UNLOCK YOUR BUSINESS POTENTIAL</h1>
+            </div>
+            <div class="mai">
+                <P>We saw a significant improvement in our bottom line within months. Highly recommend their services!</P>
+            </div>
+            <div class="mai">
+                <BUtton>CONTACT</BUtton>
+            </div>
+        </div>
+        <div class="sec7">
+            <div class="sec7a">
+                <img src="./saurabh.png" alt="">
+            </div>
+            <div class="sec7b">
+                <div class="last">
+                    <h3>ADDRESS</h3>
+                    <p>Warje, Pune Maharashtra</p>
+                </div>
+                <div class="last">
+                    <h3>CONTACT US</h3>
+                    <p>Phone: 9765303776 <br> Email: saurbhtilak6@gmail.com</p>
+                </div>
+                <div class="last">
+                    <h3>Financial Wellness Center, resources for Support and Guidance</h3>
+                    <p>Image from <a href="">freepik</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>This site was created by the <a href="">Saurabh </a></p>
+        </div>
+    </div>
+</body>
+</html>
