@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            width: 100vw;
+            overflow: hidden auto;
+        }
+        html{
+            font-size: 10px;
+        }
+        .wrapper{
+            height: 100%;
+            width: 100%;
+        }
+        .sec1{
+            min-height: 80rem;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)), url(bgimgA.jpeg);
+           justify-content: center;
+           align-items: center;
+            background-size: 100% 100%;
+            display: flex;
+            
+            
+        }
+        .sec1a{
+          
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3rem;
+            color: white;
+            padding: 5rem;
+          
+        }
+        .sec1a h1{
+            font-size: 5rem;
+        }
+        .sec1a p{
+            font-size: 1.7rem;
+        }
+        .sec1a button{
+            height: 4rem;
+            width: 14rem;
+            background: none;
+            color: white;
+            border-radius: 2rem;
+            border-color:#0CBCF5;
+        }
+        .sec1b{
+           height: 80rem;
+            width: 50%;
+            display: flex;
+            
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .cbx{
+            height: 55rem;
+            width: 70%;
+            background-color: #0CBCF5;
+            position:absolute;
+            top: 5rem;
+            right: 6rem;
+            z-index: 10;
+
+        }
+        .imgs{
+            height: 55rem;
+            width: 70%;
+            position:absolute;
+            top: 10rem;
+            right: 12rem;
+            z-index: 20;
+
+        }
+        .imgs img{
+            height: 100%;
+            width: 100%;
+        }
+        .sec2{
+            min-height: 50rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+           
+            justify-content: center;
+            align-items: center;
+        }
+        .sec2a{
+            height: 50rem;
+            width: 50%;
+            display: flex;
+            padding: 0rem 3rem;
+            position: relative;
+        }
+        .im1 img{
+            height:80%;
+            width:80%;
+            position: absolute;
+            top: -10rem;
+            left: 4rem;
+
+        }
+        .im2 img{
+            height: 30rem;
+            width:30rem;
+            position: absolute;
+            top: 7rem;
+            right:-2rem;
+
+        }
+        .sec2b{
+            min-height:100%;
+            width: 50%;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3rem;
+            padding: 0rem 4rem;
+            font-size: 2.2rem;
+        }
+        .sec2b button{
+            height: 4rem;
+            width: 15rem;
+            background:none;
+            border-radius: 2rem;
+            border-color:#0CBCF5;
+        }
+        .sec3{
+            min-height: 50rem;
+            width: 100%;
+            background-color:#0CBCF5 ;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec3a{
+            width: 30%;
+           
+            display: flex;
+            gap: 3rem;
+            font-size: 2rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+        }
+        .sec3a img{
+            height: 6rem;
+            width: 6rem;
+        }
+        .sec4{
+           min-height: 80rem;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)), url(./bgimgB.jpeg);
+            background-size: cover;
+            display: flex;
+            
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .sec4a{
+            height:50rem;
+            width: 40%;
+           
+        }
+        .sec4a img{
+            height: 100%;
+            width: 100%;
+
+        }
+        .sec4b{
+            height: 60%;
+            width: 40%;
+            color: aliceblue;
+            display: flex;
+            font-size: 1.8rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3rem;
+            padding: 4rem;
+        }
+        .sec4b button{
+            height: 4rem;
+            width: 15rem;
+            background:none;
+            color: white;
+            border-radius: 2rem;
+            border-color:#0CBCF5;
+        }
+        @media only screen and (max-width: 900px){
+            html{
+                font-size: 8px;
+            }
+            .sec1a{
+                width: 90%;
+            }
+            .sec1b{
+                width: 90%;
+               
+            }
+            .sec2{
+                padding: 30px;
+            }
+          
+            .sec3a{
+                width: 90%;
+                padding: 40px;
+            }
+            .sec4{
+                padding: 30px;
+            }
+            .sec4a{
+                width: 80%;
+            }
+            .sec4b{
+                width: 80%;
+            }
+
+        } 
+        
+        @media only screen and (max-width: 500px){
+            html{
+                font-size: 7px;
+            }
+            .sec1{
+               flex-wrap: wrap;
+
+            }
+            .sec1a{
+                width: 90%;
+            }
+            .sec1b{
+                width: 90%;  
+            }
+            .sec2{
+                padding: 30px;
+            }
+            .sec2a{
+                width: 90%;
+
+            }
+            .sec2b{
+                width: 90%;
+            }
+            
+            .sec3a{
+                width: 90%;
+                padding: 30px;
+            }
+            .sec4{
+                padding: 30px;
+            }
+            .sec4a{
+                width: 90%;
+            }
+            .sec4b{
+                width: 90%;
+            }
+
+
+        }    
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+            <div class="sec1">
+
+                <div class="sec1a">
+                    <h1>Renovate <br>Your Lifestyle</h1>
+                    <p>Vivamus vestibulum pharetra felis, vel bibendum tellus pretium ac. Sed gravida nec nisi ut dignissim.</p>
+                    <button>VIEW MORE</button>
+                </div>
+                <div class="sec1b">
+                    <div class="cbx">
+
+                    </div>
+                    <div class="imgs">
+                        <img src="coupleImg.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+
+    <div class="sec2">
+
+        <div class="sec2a">
+            <div class="im1">
+                <img src="homeA.jpeg" alt="">
+            </div>
+            <div class="im2">
+                <img src="homeB.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="sec2b">
+            <h1>Inspired by living</h1>
+            <p>Phasellus scelerisque sed leo quis gravida. Fusce lobortis libero ut arcu blandit pharetra.</p>
+            <button>VEIW MORE</button>
+        </div>
+    </div>
+    <div class="sec3">
+        <div class="sec3a">
+            <img src="ppng3.png" alt="">
+            <h1>Design-Build</h1>
+            <p>____</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+        </div>
+        <div class="sec3a">
+
+            <img src="ppng.png" alt="">
+            <h1>Modeling</h1>
+            <p>____</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+        </div>
+        <div class="sec3a">
+            <img src="ppng2.png" alt="">
+            <h1>Building</h1>
+            <p>____</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+        </div>
+    </div>
+    <div class="sec4">
+        <div class="sec4a">
+            <img src="bgimgA.jpeg" alt="">
+        </div>
+        <div class="sec4b">
+
+            <h1>Our History</h1>
+            <p>Since then we've built hundreds of commercial, government and private buildings and facilities. It may not sound like a lot, but if you estimate the manpower, working hours, materials, planning and correlating that were all involved in completing each separate project, then our productivity is immense!</p>
+            <button>VIEW MORE</button>
+        </div>
+    </div>
+
+        
+    </div>
+    
+</body>
+</html>
