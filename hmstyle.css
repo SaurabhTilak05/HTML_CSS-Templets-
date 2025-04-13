@@ -1,0 +1,603 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ min-height: 100vh;
+ width: 100vw;
+ overflow: hidden auto;
+}
+html{
+ font-size: 10px;
+}
+.wrapper{
+ height: 100%;
+ width: 100%;
+}
+.sec1{
+ min-height: 75rem;
+ width: 100%;
+
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+.head{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 10;
+}
+.head img{
+ height: 20rem;
+ width: 28rem;
+ position: absolute;
+ top: 4.5rem;
+
+}
+.sec1a{
+ min-height:60rem;
+ width: 80%;
+ display: flex;
+
+ z-index: 8;
+ flex-wrap: wrap;
+
+}
+
+.head{
+    animation: logo 2s  500ms ease-in;
+}
+
+
+@keyframes logo {
+    0% {
+        transform:translateY(-500px) ;
+    }
+
+    100% {
+        transform: translateY(-10px) ;
+    }
+}
+
+
+.seca1{
+    animation: photo 1s 500ms linear;
+}
+
+
+@keyframes photo {
+    0% {
+        transform: translateX(-700px) rotate(60deg);
+    }
+
+    100% {
+        transform: translateX(0px) ;
+    }
+}
+
+
+.seca2{
+    animation: photo1 1s 500ms linear;
+}
+
+
+@keyframes photo1 {
+    0% {
+        transform: translateX(1800px) rotate(60deg);
+    }
+
+    100% {
+        transform: translateX(0px) ;
+    }
+}
+
+
+
+.seca1{
+ height: 60rem;
+ width: 50%;
+ background-image: url(shouse.jpg);
+ background-size: 100% 100%;
+
+ font-size: 2rem;
+ color: #111111;
+ padding: 3rem;
+}
+.seca2{
+ height: 60rem;
+ width: 50%;
+ background-image: url(girlbgimg.jpg);
+ background-size:cover;
+
+}
+.txt{
+ display: flex;
+ flex-direction:column;
+ gap: 1.5rem;
+}
+.sec2{
+ min-height: 90rem;
+ width: 100%;
+ display: flex;
+ position: relative;
+
+}
+.sec2a{
+ min-height: 90rem;
+ width: 50%;
+ position: relative;
+ 
+}
+.imgs{
+ height: 40rem;
+ width: 50%;
+ display: flex;
+}
+.simg:hover{
+    animation: photo1 1s linear;
+
+ }
+ 
+
+@keyframes example {
+     from {
+         transform: translateX(0px);
+     }
+
+     to {
+         transform: translateX(200px) rotate(-90deg) scale(2) ;
+     }
+ }
+ .fimg:hover{
+     animation: example1 2s linear 1s 1 normal;
+
+ }
+@keyframes example1 {
+     from {
+         transform: translateX(-100px); 
+     }
+
+     to {
+         transform: translateX(300px) rotate(180deg) scale(0.9) ;
+     
+     }
+ }
+.simg{
+ height: 55rem;
+ display: flex;
+ width: 35rem;
+ position: absolute;
+ top: 25rem;
+ right: -7rem;
+ z-index: 7;
+}
+.simg img{
+ height: 100%;
+ width: 100%;
+}
+.fimg{
+ height: 40rem;
+ width: 40rem;
+ display: flex;
+ position: absolute;
+ top: 10rem;
+ left: 7rem;
+ z-index: 4;
+
+
+}
+.fimg img{
+ height: 100%;
+ width: 100%;
+}
+.sec2b{
+height: 110rem;
+ width: 50%;
+ background-color: #B89F5D;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-end;
+ position: absolute;
+ top: -20rem; 
+ right: 0rem;
+}
+.para{
+ height: 80rem;
+ width: 80%;
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+ text-align: right;
+ justify-content: center;
+ align-items: flex-end;
+ color: aliceblue;
+
+}
+.para h6{
+     font-size: 3rem;
+}
+.para h4{
+     font-size: 4rem;
+}
+.para p{
+     font-size: 1.5rem;
+}
+.para button{
+ height: 4rem;
+ width: 15rem;
+ background-color: #516a51;
+ color: #FFFFFF;
+ border: 0rem;
+}
+.sec3{
+ min-height:50rem;
+ width: 100%;
+ display: flex;
+justify-content: center;
+align-items: center;
+ flex-wrap: wrap;
+
+}
+.sec3a{
+ height: 50rem;
+ width: 50%;
+ 
+ display: flex;
+}
+.sec3b{
+ height: 50rem;
+ width: 50%;
+ display: flex;
+ position: relative; 
+ align-items: end;
+
+}
+.imgs1{
+ height: 40rem;
+ width: 35rem;
+}
+.imgs1 img{
+ height: 100%;
+ width: 100%;
+}
+.imgs2{
+ height: 25rem;
+ width: 25rem;
+ position: absolute;
+ top: -8rem;
+ right: 10rem;
+}
+.imgs2 img{
+ height: 100%;
+ width: 100%;
+}
+.txx{
+ display: flex;
+ flex-direction: column;
+ gap: 3rem;
+justify-content: flex-start;
+align-items: end;
+ padding: 3rem;
+}
+.txxa{
+ font-size: 3rem;
+ align-self: flex-start;
+}
+.txxb{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 2rem;
+
+}
+
+.txx button{
+         height: 4rem;
+         width: 20rem;
+         background-color:  #516a51;
+         border: 0rem;
+         
+         color: #FFFFFF;
+        
+        
+}
+.sec4{
+ min-height: 50rem;
+ width: 100%;
+
+ display: flex;
+ flex-wrap: wrap;
+
+}
+.sec4a{
+min-height: 50rem;
+ width: 50%;
+ 
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+}
+.hotgirl{
+ height: 60rem;
+ width: 50rem;
+ position: absolute;
+ top: -20rem;
+ z-index: 2;
+
+
+}
+.hotgirl img{
+ height: 100%;
+ width: 100%;
+
+}
+.red{
+ height: 20rem;
+ display: flex;
+ width: 100%;
+ position: absolute;
+ bottom: 0rem;
+ z-index: 1;
+ background-color:#CD0118;
+} 
+.sec4b{
+ min-height: 50rem;
+ width: 50%;
+
+ display: flex;
+ justify-content: center;
+ align-items:flex-end;
+ 
+}
+.box{
+ height:40rem;
+ width:70% ;
+ background-color: #B89F5D;
+ color: #FFFFFF;
+ display: flex;
+ padding: 2rem;
+ gap: 2rem;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-end;
+ text-align: right;
+
+}
+.box h2{
+ font-size: 4rem;
+}
+.box h5{
+ font-size: 4rem;
+}
+.box p{
+ font-size: 1.7rem;
+}
+
+
+
+@media only screen and (max-width: 900px){
+     html{
+         font-size: 8px;
+     }
+     .head{
+         height: 100px;
+     }
+     .txt{
+         padding-top:100px;
+     }
+     .seca1{
+     width: 50%;
+     }
+     .seca2{
+     width: 50%;
+     }
+
+     .sec2a{
+         z-index:6;
+     }
+     .fimg img{
+             position: absolute;
+             right:-20px;
+     }
+     .simg img{
+             position: absolute;
+             right:-70px;
+             top: 80px;
+     }
+     .sec2{
+             height: 960px;
+     }
+     .sec2a{
+         width: 50%;
+     }
+     .sec2b{  
+        display: flex;
+        width: 50%;
+        z-index: 5;
+       
+        height: 1100px;
+       
+        
+     }
+     .para{
+         display: flex;
+         width: 90%;
+         text-align: right;
+         /* justify-content: flex-end;
+         align-items: center; */
+         padding: 30px 0px;
+     }
+     .sec3a{
+         width: 80%;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+     }
+     .sec3b{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+     }
+     .imgs2{
+         position: absolute;
+         top: -100px;
+         right: 122px;
+     }
+     .sec4{
+         padding: 0px;
+     }
+     .sec4a{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 0px;
+     }
+     .sec4b{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 0px;
+         position: relative;
+     }
+     .hotgirl{
+         position: absolute;
+         top: -90px;
+         left: 50px;
+         z-index: 2;
+     }
+     .box{
+         position: absolute;
+         top: -120px;
+         left: 300px;
+         height: 400px;
+         width: 500px;
+         z-index: 1;
+
+     }
+     .red{
+         width: 50%;
+         position:absolute;
+         top:250px;
+         left: 150px;
+     
+     }
+     
+ }
+@media only screen and (max-width: 500px){
+     html{
+         font-size: 7px;
+     }
+     .head{
+         height: 100px;
+     }
+     .txt{
+         padding-top:100px;
+     }
+     .seca1{
+     width: 100%;
+     }
+     .seca2{
+     width: 100%;
+     }
+
+     .sec2a{
+         z-index:6;
+     }
+     .fimg img{
+             position: absolute;
+             right:-20px;
+     }
+     .simg img{
+             position: absolute;
+             right:-100px;
+             top: 80px;
+     }
+     .sec2{
+             height: 960px;
+     }
+     .sec2b{  
+        display: flex;
+        width: 80%;
+        z-index: 5;
+        height: 1100px;
+       
+        
+     }
+     .para{
+         display: flex;
+         text-align: center;
+         justify-content: flex-end;
+         align-items: center;
+         padding: 30px 0px;
+     }
+     .sec3a{
+         width: 80%;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+     }
+     .sec3b{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+     }
+     .imgs2{
+         position: absolute;
+         top: -100px;
+         right: 122px;
+     }
+     .sec4{
+         padding: 0px;
+     }
+     .sec4a{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 0px;
+     }
+     .sec4b{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 0px;
+     }
+     .hotgirl{
+         position: absolute;
+         top: -35px;
+     }
+     .box{
+        
+         position: absolute;
+         top: 0px;
+         left: 50px;
+         height: 300px;
+         width: 350px;
+         z-index: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         padding: 40px;
+
+     }
+ }      
+
