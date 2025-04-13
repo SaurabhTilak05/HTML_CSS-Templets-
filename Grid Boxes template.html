@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        boby{
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent{
+            height: 40.6rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(245, 242, 242);
+        }
+      
+        .main{
+            height: 28.7rem ;
+            width: 85%; 
+               
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 2rem;
+
+        }
+
+        .box{
+           
+            background-color: rgb(245, 242, 242);
+            flex-wrap: wrap; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box1{
+            height: 11.25rem;
+            width: 20rem;
+            background-color:white;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.6rem;
+            
+            box-shadow: 0rem 0rem 0.06rem black;
+        }
+        .one{
+            height: 50%;
+            width: 100%;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .st{
+            height: 90%;
+            width: 35%;
+        }
+        .st img{
+            height: 100%;
+            width: 85%;
+        }
+        .tx{
+            height: 90%;
+            width: 65%;
+            display: flex;
+            justify-content: center;
+            gap: 0rem;
+            flex-direction: column;
+        }
+        .two{
+            height: 30%;
+            width: 100%;
+            display: flex;
+           
+            justify-content: center;
+            align-items: center;
+            padding: 0rem;
+        }
+        .three{
+            height: 25%;
+            width: 100%;
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: last baseline;
+            padding: 0.4rem;
+        }
+        .three a{
+            text-decoration: none;
+            color: dodgerblue;
+        }
+
+
+        @media only screen and ( max-width:780px) {
+			html {
+				font-size: 12px;
+			}
+		}
+        @media only screen and ( max-width:435px) {
+			html {
+				font-size: 6.6px;
+			}
+		}
+        @media only screen and ( max-width:385px) {
+			html {
+				font-size: 5.7px;
+			}
+		}
+        @media only screen and ( max-width:330px) {
+			html {
+				font-size: 5px;
+			}
+		}
+        @media only screen and ( max-width:300px) {
+			html {
+				font-size: 3.5px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <div class="parent">
+    
+    <div class="main">
+        <div class="box">
+
+            <div class="box1">
+                <div class="one">
+
+                    <div class="st">
+                        <img src="StripeS.png" alt="">
+                    </div>
+                    <div class="tx">
+                        <p><b>strip</b></p>
+                        <p>Payment Services</p>
+                        <h1>****</h1>
+                    </div>
+                </div>
+                <div class="two">
+                    <h4>Get more context on your user with strip data inside our platform.</h4>
+                </div>
+                <div class="three">
+                    <div class="ls">
+                        <p>Installed 172 times</p>
+                    </div>
+                    <div class="ls">
+                        <a href="">View ></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="one">
+
+                    <div class="st">
+                        <img src="Mailchamp.png" alt="">
+                    </div>
+                    <div class="tx">
+                        <p><b>Mailchimp</b></p>
+                        <p>Project Management</p>
+                        <h1>****</h1>
+                    </div>
+                </div>
+                <div class="two">
+                    <h4>Capture and sync subscribers from your mailchimp platform to ours with ease.</h4>
+                </div>
+                <div class="three">
+                    <div class="ls">
+                        <p>Installed 1234 times</p>
+                    </div>
+                    <div class="ls">
+                        <a href="">View ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="one">
+
+                    <div class="st">
+                        <img src="Dropbox.png" alt="">
+                    </div>
+                    <div class="tx">
+                        <p><b>Dropbox</b></p>
+                        <p>File Management</p>
+                        <h1>****</h1>
+                    </div>
+                </div>
+                <div class="two">
+                    <h4>Use dropbox to sync your photos to our platform and share it with other.</h4>
+                </div>
+                <div class="three">
+                    <div class="ls">
+                        <p>Installed 1234 times</p>
+                    </div>
+                    <div class="ls">
+                        <a href="">View ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="one">
+
+                    <div class="st">
+                        <img src="shopify.png" alt="">
+                    </div>
+                    <div class="tx">
+                        <p><b>Shopify</b></p>
+                        <p>Ecommerce</p>
+                        <h1>****</h1>
+                    </div>
+                </div>
+                <div class="two">
+                    <h4>Sell you items with ease with having any website with our free platform.</h4>
+                </div>
+                <div class="three">
+                    <div class="ls">
+                        <p>Installed 1234 times</p>
+                    </div>
+                    <div class="ls">
+                        <a href="">View ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="one">
+
+                    <div class="st">
+                        <img src="Athantic.png" alt="">
+                    </div>
+                    <div class="tx">
+                        <p><b>Atlassian</b></p>
+                        <p>Project management</p>
+                        <h1>****</h1>
+                    </div>
+                </div>
+                <div class="two">
+                    <h4>Developing product for developers,project managers and architects.</h4>
+                </div>
+                <div class="three">
+                    <div class="ls">
+                        <p>Installed 345 times</p>
+                    </div>
+                    <div class="ls">
+                        <a href="">View ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="one">
+
+                    <div class="st">
+                        <img src="salesforce.png" alt="">
+                    </div>
+                    <div class="tx">
+                        <p><b>Salesforce</b></p>
+                        <p>Project management</p>
+                        <h1>****</h1>
+                    </div>
+                </div>
+                <div class="two">
+                    <h4>Developing product for developers,project managers and architects.</h4>
+                </div>
+                <div class="three">
+                    <div class="ls">
+                        <p>Installed 172 times</p>
+                    </div>
+                    <div class="ls">
+                        <a href="">View ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>    
+</body>
+</html>
